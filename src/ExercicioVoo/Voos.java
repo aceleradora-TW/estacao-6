@@ -11,8 +11,7 @@ public class Voos {
         this.duracao = duracao;
     }
 
-    public String getOrigem() {
-        return origem;
+    public String getOrigem() {        return origem;
     }
 
     public void setOrigem(String origem) {
