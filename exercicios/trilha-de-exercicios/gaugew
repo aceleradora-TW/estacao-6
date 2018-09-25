@@ -1,0 +1,27 @@
+#!/bin/bash
+
+readonly GAUGE_PATH="$PWD/.gauge-runner"
+readonly REPORT_TEMPLATE_PATH="$PWD/report-templates/html-report-4.0.6-linux.x86_64.zip"
+readonly gauge_cmd="$GAUGE_PATH/gauge"
+
+mkdir -p ${GAUGE_PATH}
+
+if [ ! -f ${gauge_cmd} ]; then
+    echo ""
+    echo "  >> Instalando Gauge..."
+    echo ""
+
+    curl -SsL https://downloads.gauge.org/stable | sh -s -- --location=${GAUGE_PATH}
+fi
+
+
+${gauge_cmd} telemetry off
+
+
+if [ ! -d "$HOME/.gauge/plugins/html-report" ]; then
+    ${gauge_cmd} install html-report --file ${REPORT_TEMPLATE_PATH}
+fi
+
+echo $@
+
+${gauge_cmd} $@

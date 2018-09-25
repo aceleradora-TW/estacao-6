@@ -1,0 +1,1114 @@
+
+	
+	
+  <!doctype html>
+  <html><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta charset="utf-8" />
+    <title>Resultado dos testes</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../css/open-sans.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+  <body>
+  <main class="main-container">
+  <div class="container">
+
+	
+  <div class="report-overview">
+    <div class="report_chart">
+      <div class="chart">
+      </div>
+      <div class="total-specs"><span class="value">3</span><span class="txt">Testes executados</span></div>
+    </div>
+    <div class="report_test-results">
+      <ul>
+        <li class="fail spec-filter" data-status="failed"><span class="value">3</span><span class="txt">Falharam</span></li>
+        <li class="pass spec-filter" data-status="passed"><span class="value">0</span><span class="txt">Passaram</span></li>
+      </ul>
+    </div>
+    <div class="report_details">
+      <ul>
+        <li>
+          <label>Executado em</label>
+          <span>Sep 25, 2018 at 10:03am</span>
+        </li>
+      </ul>
+      
+  
+
+      
+  
+
+    </div>
+  </div>
+
+
+	
+
+	
+
+	
+		<div class="specifications">
+		
+  
+    <aside class="sidebar">
+      <h3 class="title">Enunciados</h3>
+      <div id="listOfSpecifications">
+        <ul id="scenarios" class="spec-list">
+        
+          <a href="02-numeros-armstrong.html">
+            
+              <li class='failed spec-name'>
+            
+              <span id="scenarioName" class="scenarioname">02: O Identificador de números Armstrong</span>
+            </li>
+          </a>
+          
+          <a href="../introducao/00-ola-mundo.html">
+            
+              <li class='failed spec-name'>
+            
+              <span id="scenarioName" class="scenarioname">00: Olá, Mundo</span>
+            </li>
+          </a>
+          
+          <a href="01-fizzbuzz.html">
+            
+              <li class='failed spec-name'>
+            
+              <span id="scenarioName" class="scenarioname">01: O Tradutor Fizz Buzz</span>
+            </li>
+          </a>
+          
+        </ul>
+      </div>
+    </aside>
+  
+
+		
+  
+	
+  <div id="specificationContainer" class="details">
+    <header class="curr-spec">
+      <div class="spec-head-wrapper">
+        <h3 class="spec-head" title="/home/aluno6/Desktop/trilha-de-exercicios/enunciados/logica/01-fizzbuzz.spec">01: O Tradutor Fizz Buzz</h3>
+        <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
+          <ul>
+            <li class="fail"><span class="value">4</span><span class="txt">Failed</span></li>
+            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
+            <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
+          </ul>
+        </div>
+      </div>
+
+	
+  
+    <div class="tags scenario_tags contentSection">
+      <strong>Tags:</strong>
+      
+        <span> facil</span>
+      
+        <span> logica</span>
+      
+    </div>
+  
+
+	</header>
+	<div id="specItemsContainer">
+	
+    
+  
+
+    
+    
+
+    <div class="content">
+    
+  
+  <span><p>O problema:</p>
+
+<ul>
+<li><p>Se o número for divisível somente por <code>3</code>, o método retorna <code>Fizz</code></p></li>
+
+<li><p>Se o número for divisível somente por <code>5</code>, o método retorna <code>Buzz</code></p></li>
+
+<li><p>Se o número for divisível por ambos <code>3</code> e <code>5</code>, o método retorna <code>FizzBuzz</code></p></li>
+
+<li><p>Se o número não for divisível por nenhum dos dois, o método retorna o próprio número em formato de String</p></li>
+</ul>
+
+<p><strong>Dicas:</strong></p>
+
+<p>Utilize o operador <code>%</code> para saber se um número é divisível por outro. Para saber se um número é divisível por 2, por
+exemplo, podemos usar o seguinte:</p>
+
+<pre><code>int numero = 4;
+
+
+if (numero % 2 == 0) {
+    System.out.println(&#34;O numero eh divisivel por 2&#34;);
+} else {
+    System.out.println(&#34;O numero nao eh divisivel por 2&#34;);
+}
+</code></pre>
+
+<p>Para converter um número inteiro para String, pode-se utilizar os métodos <code>Integer.toString()</code>,
+<code>String.valueOf</code> ou ainda <code>Objects.toString</code>:</p>
+
+<pre><code>String numero = Integer.parseInt(2); // numero == &#34;2&#34;
+
+
+// ou
+
+
+String outroNumero = String.valueOf(4); // outroNumero == &#34;4&#34;
+
+
+// ou
+
+
+String maisUmNumero = Objects.toString(5); // maisUmNumero == &#34;5&#34;
+
+
+</code></pre>
+</span>
+  
+  
+
+  
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Traduz numeros divisiveis por 3 para Fizz</h3>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"3"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"Fizz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 3 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;Fizz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;Fizz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"6"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"Fizz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 6 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;Fizz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;Fizz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"12"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"Fizz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 12 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;Fizz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;Fizz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Traduz numeros divisiveis por 5 para Buzz</h3>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"5"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"Buzz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 5 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;Buzz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;Buzz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Traduz numeros divisiveis por 3 e por 5 para FizzBuzz</h3>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"15"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"FizzBuzz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 15 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;FizzBuzz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;FizzBuzz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"30"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"FizzBuzz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 30 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;FizzBuzz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;FizzBuzz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"45"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"FizzBuzz"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 45 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;FizzBuzz&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;FizzBuzz&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Traduz numeros que nao sao diviseis para o proprio numero em forma de String</h3>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"7"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"7"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 7 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;7&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;7&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Ao receber 
+      </span>
+    
+  
+    
+      <span class='parameter'>"2"</span>
+    
+  
+    
+      <span>
+         deve retornar 
+      </span>
+    
+  
+    
+      <span class='parameter'>"2"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>java.lang.AssertionError: [Ao receber 2 o tradutor retorna &#34;&#34;, quando deveria estar retornando &#34;2&#34;] <br/>Expecting:<br/> &lt;&#34;&#34;&gt;<br/>to be equal to:<br/> &lt;&#34;2&#34;&gt;<br/>but was not.</pre>
+        </h4>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+
+    </div>
+    </div>
+
+    
+  
+
+    
+    
+    </div>
+  
+
+		</div>
+	
+
+ 	</div>
+	</main>
+	
+  <footer class="footer">
+    <div class="container">
+      <p>Generated by Gauge HTML Report</p>
+    </div>
+  </footer>
+
+	
+    <script type="text/javascript">
+      var loadingImage = "../../images/loading.gif";
+      var closeButton = "../../images/close.gif";
+    </script>
+    <script src="../../js/lightbox.js"></script>
+    <script src="../../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../../js/auto-complete.min.js" type="text/javascript"></script>
+    <script src="../../js/clipboard.min.js" type="text/javascript"></script>
+    <script src="../../js/search_index.js" type="text/javascript"></script>
+    <script src="../../js/main.js" type="text/javascript"></script>
+    </body>
+  </html>
+
