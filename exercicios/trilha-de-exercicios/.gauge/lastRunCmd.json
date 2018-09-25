@@ -1,0 +1,7 @@
+[
+	"/home/aluno6/Desktop/estacao-6/exercicios/trilha-de-exercicios/.gauge-runner/gauge",
+	"run",
+	"--tags",
+	"\"logica|introducao|facil|medio|dificil\"",
+	"enunciados"
+]

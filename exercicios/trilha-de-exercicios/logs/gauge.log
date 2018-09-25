@@ -641,3 +641,348 @@ com.thoughtworks.aceleradora.IdentificadorDeArmstrongTest.traduzNumerosFizzCorre
 10:03:47.345 Scenarios:	7 executed	0 passed	7 failed	0 skipped
 10:03:47.345 
 Total time taken: 106ms
+12:38:55.038 Plugin java is already installed.
+12:38:55.038 Plugin html-report is already installed.
+12:38:55.043 The following specifications satisfy filter criteria:
+12:38:55.043 enunciados/introducao/00-ola-mundo.spec
+12:38:55.043 enunciados/logica/01-fizzbuzz.spec
+12:38:55.044 enunciados/logica/02-numeros-armstrong.spec
+12:38:55.965 Checking updates...
+12:38:56.571 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Responde com ol\303\241, mundo" > 
+12:38:56.572 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Responde com ol\303\241, mundo" parameterizedStepValue:"Responde com ol\303\241, mundo" > > 
+12:38:56.579 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ao receber <numero> deve retornar <traducao>" > 
+12:38:56.579 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ao receber {} deve retornar {}" parameterizedStepValue:"Ao receber <numero> deve retornar <traducao>" parameters:"numero" parameters:"traducao" > > 
+12:38:56.580 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Identifica <numero> corretamente, responendo <mensagem>" > 
+12:38:56.580 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Identifica {} corretamente, responendo {}" parameterizedStepValue:"Identifica <numero> corretamente, responendo <mensagem>" parameters:"numero" parameters:"mensagem" > > 
+12:38:57.122 # 00: Olá, Mundo
+12:38:57.124 ## Diz olá, mundo
+12:38:57.125 * Responde com olá, mundo
+12:38:57.177 Failed Step: Responde com olá, mundo
+12:38:57.177 Error Message: java.lang.AssertionError: [O programa deveria retornar "Olá, mundo", mas está retornando ""] 
+Expecting:
+ <"">
+to be equal to:
+ <"Olá, mundo">
+but was not.
+12:38:57.177 Specification: enunciados/introducao/00-ola-mundo.spec:7
+12:38:57.177 Stacktrace: 
+com.thoughtworks.aceleradora.OlaMundoTest.respondeComOlaMundo(OlaMundoTest.java:13)
+12:38:57.179 # 01: O Tradutor Fizz Buzz
+12:38:57.179 ## Traduz numeros divisiveis por 3 para Fizz
+12:38:57.180 * Ao receber "3" deve retornar "Fizz"
+12:38:57.185 Failed Step: Ao receber "3" deve retornar "Fizz"
+12:38:57.185 Error Message: java.lang.AssertionError: [Ao receber 3 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:38:57.185 Specification: enunciados/logica/01-fizzbuzz.spec:48
+12:38:57.185 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.185 * Ao receber "6" deve retornar "Fizz"
+12:38:57.187 Failed Step: Ao receber "6" deve retornar "Fizz"
+12:38:57.187 Error Message: java.lang.AssertionError: [Ao receber 6 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:38:57.187 Specification: enunciados/logica/01-fizzbuzz.spec:49
+12:38:57.187 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.187 * Ao receber "12" deve retornar "Fizz"
+
+12:38:57.189 Failed Step: Ao receber "12" deve retornar "Fizz"
+12:38:57.189 Error Message: java.lang.AssertionError: [Ao receber 12 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:38:57.189 Specification: enunciados/logica/01-fizzbuzz.spec:50
+12:38:57.190 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.190 ## Traduz numeros divisiveis por 5 para Buzz
+12:38:57.190 * Ao receber "5" deve retornar "Buzz"
+
+12:38:57.193 Failed Step: Ao receber "5" deve retornar "Buzz"
+12:38:57.193 Error Message: java.lang.AssertionError: [Ao receber 5 o tradutor retorna "", quando deveria estar retornando "Buzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Buzz">
+but was not.
+12:38:57.193 Specification: enunciados/logica/01-fizzbuzz.spec:54
+12:38:57.193 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.193 ## Traduz numeros divisiveis por 3 e por 5 para FizzBuzz
+12:38:57.194 * Ao receber "15" deve retornar "FizzBuzz"
+12:38:57.196 Failed Step: Ao receber "15" deve retornar "FizzBuzz"
+12:38:57.196 Error Message: java.lang.AssertionError: [Ao receber 15 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:38:57.196 Specification: enunciados/logica/01-fizzbuzz.spec:58
+12:38:57.196 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.196 * Ao receber "30" deve retornar "FizzBuzz"
+12:38:57.197 Failed Step: Ao receber "30" deve retornar "FizzBuzz"
+12:38:57.197 Error Message: java.lang.AssertionError: [Ao receber 30 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:38:57.197 Specification: enunciados/logica/01-fizzbuzz.spec:59
+12:38:57.197 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.197 * Ao receber "45" deve retornar "FizzBuzz"
+
+12:38:57.201 Failed Step: Ao receber "45" deve retornar "FizzBuzz"
+12:38:57.201 Error Message: java.lang.AssertionError: [Ao receber 45 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:38:57.201 Specification: enunciados/logica/01-fizzbuzz.spec:60
+12:38:57.201 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.201 ## Traduz numeros que nao sao diviseis para o proprio numero em forma de String
+12:38:57.202 * Ao receber "7" deve retornar "7"
+12:38:57.204 Failed Step: Ao receber "7" deve retornar "7"
+12:38:57.204 Error Message: java.lang.AssertionError: [Ao receber 7 o tradutor retorna "", quando deveria estar retornando "7"] 
+Expecting:
+ <"">
+to be equal to:
+ <"7">
+but was not.
+12:38:57.204 Specification: enunciados/logica/01-fizzbuzz.spec:64
+12:38:57.204 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.204 * Ao receber "2" deve retornar "2"
+12:38:57.206 Failed Step: Ao receber "2" deve retornar "2"
+12:38:57.206 Error Message: java.lang.AssertionError: [Ao receber 2 o tradutor retorna "", quando deveria estar retornando "2"] 
+Expecting:
+ <"">
+to be equal to:
+ <"2">
+but was not.
+12:38:57.206 Specification: enunciados/logica/01-fizzbuzz.spec:65
+12:38:57.206 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:38:57.207 # 02: O Identificador de números Armstrong
+12:38:57.207 ## Retorna mensagem de sucesso quando o numero for de Armstrong
+12:38:57.208 * Identifica "3" corretamente, responendo "Este eh um numero de Armstrong!"
+
+12:38:57.211 ## Retorna mensagem de aviso quando o numero NAO for de Armstrong
+12:38:57.211 * Identifica "10" corretamente, responendo "Este nao eh um numero de Armstrong!"
+
+12:38:57.314 Plugin [Html Report] with pid [15023] has exited
+12:38:57.415 Specifications:	3 executed	1 passed	2 failed	0 skipped
+12:38:57.415 Scenarios:	7 executed	2 passed	5 failed	0 skipped
+12:38:57.415 
+Total time taken: 106ms
+12:46:56.558 Plugin java is already installed.
+12:46:56.559 Plugin html-report is already installed.
+12:46:56.565 The following specifications satisfy filter criteria:
+12:46:56.565 enunciados/introducao/00-ola-mundo.spec
+12:46:56.565 enunciados/logica/01-fizzbuzz.spec
+12:46:56.565 enunciados/logica/02-numeros-armstrong.spec
+12:46:58.083 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Responde com ol\303\241, mundo" > 
+12:46:58.084 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Responde com ol\303\241, mundo" parameterizedStepValue:"Responde com ol\303\241, mundo" > > 
+12:46:58.092 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ao receber <numero> deve retornar <traducao>" > 
+12:46:58.092 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ao receber {} deve retornar {}" parameterizedStepValue:"Ao receber <numero> deve retornar <traducao>" parameters:"numero" parameters:"traducao" > > 
+12:46:58.093 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Identifica <numero> corretamente, responendo <mensagem>" > 
+12:46:58.093 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Identifica {} corretamente, responendo {}" parameterizedStepValue:"Identifica <numero> corretamente, responendo <mensagem>" parameters:"numero" parameters:"mensagem" > > 
+12:46:58.289 Checking updates...
+12:46:58.681 # 00: Olá, Mundo
+12:46:58.683 ## Diz olá, mundo
+12:46:58.686 * Responde com olá, mundo
+12:46:58.735 Failed Step: Responde com olá, mundo
+12:46:58.735 Error Message: java.lang.AssertionError: [O programa deveria retornar "Olá, mundo", mas está retornando ""] 
+Expecting:
+ <"">
+to be equal to:
+ <"Olá, mundo">
+but was not.
+12:46:58.735 Specification: enunciados/introducao/00-ola-mundo.spec:7
+12:46:58.735 Stacktrace: 
+com.thoughtworks.aceleradora.OlaMundoTest.respondeComOlaMundo(OlaMundoTest.java:13)
+12:46:58.737 # 01: O Tradutor Fizz Buzz
+12:46:58.737 ## Traduz numeros divisiveis por 3 para Fizz
+12:46:58.738 * Ao receber "3" deve retornar "Fizz"
+12:46:58.741 Failed Step: Ao receber "3" deve retornar "Fizz"
+12:46:58.741 Error Message: java.lang.AssertionError: [Ao receber 3 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:46:58.742 Specification: enunciados/logica/01-fizzbuzz.spec:48
+12:46:58.742 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.742 * Ao receber "6" deve retornar "Fizz"
+12:46:58.744 Failed Step: Ao receber "6" deve retornar "Fizz"
+12:46:58.744 Error Message: java.lang.AssertionError: [Ao receber 6 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:46:58.744 Specification: enunciados/logica/01-fizzbuzz.spec:49
+12:46:58.744 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.744 * Ao receber "12" deve retornar "Fizz"
+
+12:46:58.746 Failed Step: Ao receber "12" deve retornar "Fizz"
+12:46:58.746 Error Message: java.lang.AssertionError: [Ao receber 12 o tradutor retorna "", quando deveria estar retornando "Fizz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Fizz">
+but was not.
+12:46:58.746 Specification: enunciados/logica/01-fizzbuzz.spec:50
+12:46:58.746 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.747 ## Traduz numeros divisiveis por 5 para Buzz
+12:46:58.747 * Ao receber "5" deve retornar "Buzz"
+
+12:46:58.751 Failed Step: Ao receber "5" deve retornar "Buzz"
+12:46:58.751 Error Message: java.lang.AssertionError: [Ao receber 5 o tradutor retorna "", quando deveria estar retornando "Buzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"Buzz">
+but was not.
+12:46:58.751 Specification: enunciados/logica/01-fizzbuzz.spec:54
+12:46:58.751 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.751 ## Traduz numeros divisiveis por 3 e por 5 para FizzBuzz
+12:46:58.752 * Ao receber "15" deve retornar "FizzBuzz"
+12:46:58.755 Failed Step: Ao receber "15" deve retornar "FizzBuzz"
+12:46:58.755 Error Message: java.lang.AssertionError: [Ao receber 15 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:46:58.755 Specification: enunciados/logica/01-fizzbuzz.spec:58
+12:46:58.755 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.755 * Ao receber "30" deve retornar "FizzBuzz"
+12:46:58.757 Failed Step: Ao receber "30" deve retornar "FizzBuzz"
+12:46:58.757 Error Message: java.lang.AssertionError: [Ao receber 30 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:46:58.757 Specification: enunciados/logica/01-fizzbuzz.spec:59
+12:46:58.757 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.757 * Ao receber "45" deve retornar "FizzBuzz"
+
+12:46:58.759 Failed Step: Ao receber "45" deve retornar "FizzBuzz"
+12:46:58.759 Error Message: java.lang.AssertionError: [Ao receber 45 o tradutor retorna "", quando deveria estar retornando "FizzBuzz"] 
+Expecting:
+ <"">
+to be equal to:
+ <"FizzBuzz">
+but was not.
+12:46:58.759 Specification: enunciados/logica/01-fizzbuzz.spec:60
+12:46:58.759 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.759 ## Traduz numeros que nao sao diviseis para o proprio numero em forma de String
+12:46:58.760 * Ao receber "7" deve retornar "7"
+12:46:58.762 Failed Step: Ao receber "7" deve retornar "7"
+12:46:58.762 Error Message: java.lang.AssertionError: [Ao receber 7 o tradutor retorna "", quando deveria estar retornando "7"] 
+Expecting:
+ <"">
+to be equal to:
+ <"7">
+but was not.
+12:46:58.762 Specification: enunciados/logica/01-fizzbuzz.spec:64
+12:46:58.762 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.762 * Ao receber "2" deve retornar "2"
+12:46:58.764 Failed Step: Ao receber "2" deve retornar "2"
+12:46:58.764 Error Message: java.lang.AssertionError: [Ao receber 2 o tradutor retorna "", quando deveria estar retornando "2"] 
+Expecting:
+ <"">
+to be equal to:
+ <"2">
+but was not.
+12:46:58.764 Specification: enunciados/logica/01-fizzbuzz.spec:65
+12:46:58.764 Stacktrace: 
+com.thoughtworks.aceleradora.TradutorFizzBuzzTest.traduzNumerosFizzCorretamente(TradutorFizzBuzzTest.java:28)
+12:46:58.765 # 02: O Identificador de números Armstrong
+12:46:58.765 ## Retorna mensagem de sucesso quando o numero for de Armstrong
+12:46:58.766 * Identifica "3" corretamente, responendo "Este eh um numero de Armstrong!"
+
+12:46:58.768 ## Retorna mensagem de aviso quando o numero NAO for de Armstrong
+12:46:58.768 * Identifica "10" corretamente, responendo "Este nao eh um numero de Armstrong!"
+
+12:46:58.871 Plugin [Html Report] with pid [15464] has exited
+12:46:58.972 Specifications:	3 executed	1 passed	2 failed	0 skipped
+12:46:58.972 Scenarios:	7 executed	2 passed	5 failed	0 skipped
+12:46:58.972 
+Total time taken: 107ms
+12:51:58.848 Plugin java is already installed.
+12:51:58.848 Plugin html-report is already installed.
+12:51:58.852 The following specifications satisfy filter criteria:
+12:51:58.852 enunciados/introducao/00-ola-mundo.spec
+12:51:58.852 enunciados/logica/01-fizzbuzz.spec
+12:51:58.852 enunciados/logica/02-numeros-armstrong.spec
+12:52:00.166 Checking updates...
+12:52:00.412 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Responde com ol\303\241, mundo" > 
+12:52:00.412 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Responde com ol\303\241, mundo" parameterizedStepValue:"Responde com ol\303\241, mundo" > > 
+12:52:00.420 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ao receber <numero> deve retornar <traducao>" > 
+12:52:00.420 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ao receber {} deve retornar {}" parameterizedStepValue:"Ao receber <numero> deve retornar <traducao>" parameters:"numero" parameters:"traducao" > > 
+12:52:00.421 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Identifica <numero> corretamente, responendo <mensagem>" > 
+12:52:00.421 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Identifica {} corretamente, responendo {}" parameterizedStepValue:"Identifica <numero> corretamente, responendo <mensagem>" parameters:"numero" parameters:"mensagem" > > 
+12:52:00.999 # 00: Olá, Mundo
+12:52:01.000 ## Diz olá, mundo
+12:52:01.002 * Responde com olá, mundo
+12:52:01.049 Failed Step: Responde com olá, mundo
+12:52:01.049 Error Message: java.lang.AssertionError: [O programa deveria retornar "Olá, mundo", mas está retornando ""] 
+Expecting:
+ <"">
+to be equal to:
+ <"Olá, mundo">
+but was not.
+12:52:01.049 Specification: enunciados/introducao/00-ola-mundo.spec:7
+12:52:01.049 Stacktrace: 
+com.thoughtworks.aceleradora.OlaMundoTest.respondeComOlaMundo(OlaMundoTest.java:13)
+12:52:01.051 # 01: O Tradutor Fizz Buzz
+12:52:01.051 ## Traduz numeros divisiveis por 3 para Fizz
+12:52:01.052 * Ao receber "3" deve retornar "Fizz"
+12:52:01.055 * Ao receber "6" deve retornar "Fizz"
+12:52:01.056 * Ao receber "12" deve retornar "Fizz"
+
+12:52:01.058 ## Traduz numeros divisiveis por 5 para Buzz
+12:52:01.058 * Ao receber "5" deve retornar "Buzz"
+
+12:52:01.060 ## Traduz numeros divisiveis por 3 e por 5 para FizzBuzz
+12:52:01.061 * Ao receber "15" deve retornar "FizzBuzz"
+12:52:01.062 * Ao receber "30" deve retornar "FizzBuzz"
+12:52:01.064 * Ao receber "45" deve retornar "FizzBuzz"
+
+12:52:01.065 ## Traduz numeros que nao sao diviseis para o proprio numero em forma de String
+12:52:01.066 * Ao receber "7" deve retornar "7"
+12:52:01.067 * Ao receber "2" deve retornar "2"
+12:52:01.068 # 02: O Identificador de números Armstrong
+12:52:01.069 ## Retorna mensagem de sucesso quando o numero for de Armstrong
+12:52:01.069 * Identifica "3" corretamente, responendo "Este eh um numero de Armstrong!"
+
+12:52:01.072 ## Retorna mensagem de aviso quando o numero NAO for de Armstrong
+12:52:01.073 * Identifica "10" corretamente, responendo "Este nao eh um numero de Armstrong!"
+
+12:52:01.177 Plugin [Html Report] with pid [16004] has exited
+12:52:01.277 Specifications:	3 executed	2 passed	1 failed	0 skipped
+12:52:01.277 Scenarios:	7 executed	6 passed	1 failed	0 skipped
+12:52:01.277 
+Total time taken: 93ms
