@@ -4,7 +4,5 @@
 		"--tags",
 		"\"logica|introducao|facil|medio|dificil\""
 	],
-	"FailedItems": [
-		"enunciados/introducao/00-ola-mundo.spec:5"
-	]
+	"FailedItems": []
 }

@@ -986,3 +986,48 @@ com.thoughtworks.aceleradora.OlaMundoTest.respondeComOlaMundo(OlaMundoTest.java:
 12:52:01.277 Scenarios:	7 executed	6 passed	1 failed	0 skipped
 12:52:01.277 
 Total time taken: 93ms
+13:01:16.155 Plugin java is already installed.
+13:01:16.156 Plugin html-report is already installed.
+13:01:16.160 The following specifications satisfy filter criteria:
+13:01:16.160 enunciados/introducao/00-ola-mundo.spec
+13:01:16.160 enunciados/logica/01-fizzbuzz.spec
+13:01:16.160 enunciados/logica/02-numeros-armstrong.spec
+13:01:17.737 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Responde com ol\303\241, mundo" > 
+13:01:17.738 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Responde com ol\303\241, mundo" parameterizedStepValue:"Responde com ol\303\241, mundo" > > 
+13:01:17.746 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ao receber <numero> deve retornar <traducao>" > 
+13:01:17.746 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ao receber {} deve retornar {}" parameterizedStepValue:"Ao receber <numero> deve retornar <traducao>" parameters:"numero" parameters:"traducao" > > 
+13:01:17.748 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Identifica <numero> corretamente, responendo <mensagem>" > 
+13:01:17.748 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Identifica {} corretamente, responendo {}" parameterizedStepValue:"Identifica <numero> corretamente, responendo <mensagem>" parameters:"numero" parameters:"mensagem" > > 
+13:01:18.308 # 00: Olá, Mundo
+13:01:18.310 ## Diz olá, mundo
+13:01:18.311 * Responde com olá, mundo
+13:01:18.345 # 01: O Tradutor Fizz Buzz
+13:01:18.346 ## Traduz numeros divisiveis por 3 para Fizz
+13:01:18.346 * Ao receber "3" deve retornar "Fizz"
+13:01:18.350 * Ao receber "6" deve retornar "Fizz"
+13:01:18.351 * Ao receber "12" deve retornar "Fizz"
+
+13:01:18.353 ## Traduz numeros divisiveis por 5 para Buzz
+13:01:18.353 * Ao receber "5" deve retornar "Buzz"
+
+13:01:18.354 ## Traduz numeros divisiveis por 3 e por 5 para FizzBuzz
+13:01:18.355 * Ao receber "15" deve retornar "FizzBuzz"
+13:01:18.355 * Ao receber "30" deve retornar "FizzBuzz"
+13:01:18.357 * Ao receber "45" deve retornar "FizzBuzz"
+
+13:01:18.358 ## Traduz numeros que nao sao diviseis para o proprio numero em forma de String
+13:01:18.359 * Ao receber "7" deve retornar "7"
+13:01:18.360 * Ao receber "2" deve retornar "2"
+13:01:18.361 # 02: O Identificador de números Armstrong
+13:01:18.361 ## Retorna mensagem de sucesso quando o numero for de Armstrong
+13:01:18.362 * Identifica "3" corretamente, responendo "Este eh um numero de Armstrong!"
+
+13:01:18.364 ## Retorna mensagem de aviso quando o numero NAO for de Armstrong
+13:01:18.364 * Identifica "10" corretamente, responendo "Este nao eh um numero de Armstrong!"
+
+13:01:18.421 Checking updates...
+13:01:18.467 Plugin [Html Report] with pid [16344] has exited
+13:01:18.567 Specifications:	3 executed	3 passed	0 failed	0 skipped
+13:01:18.567 Scenarios:	7 executed	7 passed	0 failed	0 skipped
+13:01:18.567 
+Total time taken: 73ms
