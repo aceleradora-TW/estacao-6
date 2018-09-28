@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(230,232,250,.5);
+}
+h2{
+    font-size: 25px;
+    padding: 15px 0;
+}
+h3{
+    font-size: 18px;
+}
+
+h2, h3{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    background-color: rgba(230,232,250,.3);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item input{
+    border: none;
+    outline: 0;
+
+    border-bottom: solid 1px rgba(169,169,169,1);
+    background-color: rgba(230,232,250,.1);
+}
+
+.item {
+    padding: 10px;
+
+}
+
+
+
